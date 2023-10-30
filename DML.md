@@ -7,6 +7,7 @@ create database schema_akademik
 use schema_akademik
 ```
 
+##Membuat Table FAKULTAS##
 ```
 create table FAKULTAS (
 	ID_FAKULTAS smallint primary key not null,
@@ -16,6 +17,7 @@ create table FAKULTAS (
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/TABLE%20FAKULTAS.png)
 
 ```
+##Membuat table JURUSAN##
 create table JURUSAN(
 	ID_JURUSAN smallint primary key not null,
 	ID_FAKULTAS smallint not null,
@@ -25,6 +27,7 @@ create table JURUSAN(
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/TABLE%20JURUSAN.png)
 
+##Membuat table STRATA##
 ```
 create table STRATA(
 	ID_STRATA smallint primary key not null,
@@ -34,6 +37,7 @@ create table STRATA(
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/TABLE%20STRATA.png)
 
+##Membuat table SELEKSI MASUK##
 ```
 create table SELEKSI_MASUK(
 	ID_SELEKSI_MASUK smallint primary key not null,
@@ -43,6 +47,7 @@ create table SELEKSI_MASUK(
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/TABLE%20SELEKSI_MASUK.png)
 
+##Membuat table PROGRAM STUDI##
 ```
 create table PROGRAM_STUDI(
 	ID_PROGRAM_STUDI smallint primary key not null,
@@ -55,6 +60,7 @@ create table PROGRAM_STUDI(
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/TABEL%20PROGRAM%20STUDI.png)
 
+##Membuat table MAHASISWA##
 ```
 create table MAHASISWA (
 	NIM VARCHAR(15) primary key not null,
@@ -72,37 +78,42 @@ create table MAHASISWA (
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/TABLE%20MAHASISWA.png)
 
-
+##Mengisi data pada table FAKULTAS##
 ```
 insert into FAKULTAS(ID_FAKULTAS, FAKULTAS)
 VALUES(1, 'Ekonomi & Bisnis'), (2, 'Ilmu Komputer')
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/SELECT%20FAKULTAS.png)
 
+##Mengisi data pada table JURUSAN##
 ```
 insert into JURUSAN (ID_JURUSAN, ID_FAKULTAS, JURUSAN)
 values(21, 2, 'Informatika'), (22, 2, 'Sistem Informasi'), (23, 2, 'Teknik Komputer')
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/SELECT%20JURUSAN.png)
 
+##Mengisi data pada table STRATA##
 ```
 insert into STRATA(ID_STRATA, SINGKAT, STRATA)
 VALUES(1, 'D1', 'Diploma'), (2, 'S1', 'Sarjana'), (3, 'S2', 'Magister')
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/SELECT%20STRATA.png)
 
+##Mengisi data pada table PROGRAM STUDI##
 ```
 insert into PROGRAM_STUDI(ID_PROGRAM_STUDI, ID_STRATA, ID_JURUSAN, PROGRAM_STUDI)
 VALUES(211, 2, 21, 'Teknik Informatika'), (212, 2, 21, 'Teknik Komputer'), (219, 3, 21, 'Magister Ilmu Komputer')
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/SELECT%20PROGRAM%20STUDI.png)
 
+##Mengisi data pada table SELEKSI MASUK##
 ```
 insert into SELEKSI_MASUK(ID_SELEKSI_MASUK, SINGKAT, SELEKSI_MASUK)
 VALUES(1, 'SNMPTN', 'SELEKSI NASIONAL MAHASISWA PERGURUAN TINGGI NEGERI'), (2, 'SBMPTN', 'SELEKSI BERSAMA MAHASISWA PERGURUAN TINGGI NEGERI')
 ```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/SELECT%20SELEKSI%20MASUK.png)
 
+##Mengisi data pada table MAHASISWA##
 ```
 insert into MAHASISWA (NIM, ID_SELEKSI_MASUK, ID_PROGRAM_STUDI, NAMA, ANGKATAN, TGL_LAHIR, KOTA_LAHIR, JENIS_KELAMIN)
 VALUES('155150400', 1, 211, 'JONI', 2015, 1/1/1997, 'Malang', 'W'), ('155150401', 2, 212, 'JONI', 2015, 2/10/1997, 'Situbondo', 'P')
