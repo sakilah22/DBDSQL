@@ -1,4 +1,5 @@
 #Data Manipulation Language-Praktikum 3#
+
 ```create database schema_akademik```
 
 ```use schema_akademik```
@@ -7,6 +8,7 @@
 	ID_FAKULTAS smallint primary key not null,
 	FAKULTAS VARCHAR(45) not null
 )```
+![alt text]()
 
 ```create table JURUSAN(
 	ID_JURUSAN smallint primary key not null,
