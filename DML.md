@@ -1,8 +1,9 @@
 #Data Manipulation Language-Praktikum 3#
+##Mengisi database schema_akademik##
 ```
 create database schema_akademik
 ```
-
+##Mengggunakan database FAKULTAS##
 ```
 use schema_akademik
 ```
