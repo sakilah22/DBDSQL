@@ -1,12 +1,18 @@
 #Data Manipulation Language-Praktikum 3#
-```create database schema_akademik```
+```
+create database schema_akademik
+```
 
-```use schema_akademik```
+```
+use schema_akademik
+```
 
-```create table FAKULTAS (
+```
+create table FAKULTAS (
 	ID_FAKULTAS smallint primary key not null,
 	FAKULTAS VARCHAR(45) not null
-)```
+)
+```
 ![alt text](https://github.com/sakilah22/DBDSQL-DML-PRAK3/blob/main/TABLE%20FAKULTAS.png)
 
 ```create table JURUSAN(
