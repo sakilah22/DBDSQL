@@ -1,5 +1,5 @@
 #Data Manipulation Language-Praktikum 3#
-##Mengisi database schema_akademik##
+##Mengisi database schema_akademik
 ```
 create database schema_akademik
 ```
